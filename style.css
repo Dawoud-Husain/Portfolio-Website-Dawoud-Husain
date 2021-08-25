@@ -180,7 +180,7 @@ header {
 
 .heroContainer {
   padding: var(--container-padding);
-  margin-bottom: 100px;
+  margin-bottom: 300px;
 }
 
 .heroBox {
@@ -233,7 +233,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: 90px;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .lightBulb {
@@ -246,42 +246,49 @@ header {
 =============================================================================================================================*/
 /* skills Section */
 
-.skillsContainer{
+.skillsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .container {
   position: relative;
-  
-  top: 90px;
+  /* top: -100px; */
   width: 80%;
-  height: 400px;
+  height: 700px;
   margin: auto;
   padding: 25px;
   border-radius: 12px;
-  /* background-color: #79888d; */
   background-color: #1a1d28;
+  /* background-color: #79888d; */
   /* background-image: linear-gradient(270deg, #08aeea 0%, #2af598 100%); */
 }
-.container > h1 {
+
+.container > h3 {
   text-align: center;
- 
 }
+
+.container h3{
+  margin-bottom: 19px;
+}
+
 @keyframes load {
   from {
     width: 0%;
   }
 }
+
 @-webkit-keyframes load {
   from {
     width: 0%;
   }
 }
+
 @-moz-keyframes load {
   from {
     width: 0%;
   }
 }
+
 @-o-keyframes load {
   from {
     width: 0%;
@@ -296,8 +303,9 @@ header {
   font-size: 14px;
   color: #121;
   font-weight: 600;
-   color: white;
+  color: white;
 }
+
 .bar::before {
   content: attr(data-skill);
   background-color: #f3b0ff;
@@ -311,46 +319,54 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.bar.html5::before {
-  /* background-color: #041c40; */
+.bar.c::before {
   background-color: var(--secondary-color);
-  width: calc(20% - 10px);
-}
-.bar.css3::before {
- 
-  background-color: var(--secondary-color);
-  width: calc(40% - 10px);
-}
-.bar.javascript::before {
-  
-   background-color: var(--secondary-color);
-  width: calc(60% - 10px);
-}
-.bar.python::before {
-  
-   background-color: var(--secondary-color);
-  width: calc(80% - 10px);
-}
-.bar.php::before {
-   background-color: var(--secondary-color);
-  width: calc(90% - 10px);
-}
-.bar.typescript::before {
-   background-color: var(--secondary-color);
   width: calc(95% - 10px);
 }
 
-.credit {
-  text-align: center;
-  color: #000;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.bar.python::before {
+  background-color: var(--secondary-color);
+  width: calc(85% - 10px);
 }
 
-.credit a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
+.bar.java::before {
+  background-color: var(--secondary-color);
+  width: calc(40% - 10px);
+}
+
+.bar.html5::before {
+  background-color: var(--secondary-color);
+  width: calc(95% - 10px);
+}
+
+.bar.css3::before {
+  background-color: var(--secondary-color);
+  width: calc(95% - 10px);
+}
+
+.bar.github:before {
+  background-color: var(--secondary-color);
+  width: calc(90% - 10px);
+}
+
+.bar.trello::before {
+  background-color: var(--secondary-color);
+  width: calc(90% - 10px);
+}
+
+.bar.agileMeathods::before {
+  background-color: var(--secondary-color);
+  width: calc(95% - 10px);
+}
+
+.bar.documentation::before {
+  background-color: var(--secondary-color);
+  width: calc(95% - 10px);
+}
+
+.bar.qualityAssurance::before {
+  background-color: var(--secondary-color);
+  width: calc(95% - 10px);
 }
 
 /* ----------------- */
@@ -381,15 +397,6 @@ header {
   color: var(--opposite-color);
   font-size: 90px;
   transition: color 0.4s;
-}
-
-.brainImage {
-  display: flex;
-  flex-direction: right;
-  justify-content: right;
-  align-items: right;
-  margin-top: 260px;
-  max-width: 400px;
 }
 
 .fa-cuttlefish:hover {
@@ -959,7 +966,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .skillsBox {
+  .skillsContainer {
     grid-template-columns: 1fr;
   }
 
