@@ -332,7 +332,7 @@ header {
 
 .bar.java::before {
   background-color: var(--secondary-color);
-  width: calc(40% - 10px);
+  width: calc(90% - 10px);
 }
 
 .bar.html5::before {
